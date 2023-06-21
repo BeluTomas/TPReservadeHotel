@@ -1,0 +1,69 @@
+#Código y Nombre del CASO DE USO: CUU01- Reservar una habitación para la estadía
+
+##Dimensiones de clasificación:
+|Nivel|Estructura|Alcance|Caja
+Instanciación
+Interacción
+Usuario
+Sin estructurar
+Sistema
+Negra
+Real
+Dialogal
+
+
+Meta del CASO DE USO:  Permitir al usuario realizar una reserva de habitación para una estadía en el hotel. 
+
+Actor Primario: Huésped 					Otros:
+
+PRECONDICIONES (de negocio):
+
+
+PRECONDICIONES (de sistema): 
+El hotel debe tener las habitaciones ya cargadas, con sus precios determinados y tipo de habitación.
+Las reservas ya realizadas deben estar registradas.
+Las estadías en curso deben estar registradas. 
+DISPARADOR:  El usuario desea realizar una reserva de habitación para su estadía en el hotel.
+
+##CAMINO BÁSICO:
+
+El usuario accede al sistema de reservas de hoteles, ingresa la opción acceder. El sistema muestra dos opciones, ingresar o registrarse. 
+El usuario ingresa su email y contraseña. El sistema valida la información brindada. 
+El usuario ingresa opción de reservación. El sistema muestra al usuario las opciones de habitaciones LIBRES. 
+El usuario ingresa los criterios de búsqueda, como provincia y localidad, fechas de llegada y salida, número de huéspedes, preferencias, etc. El sistema muestra las habitaciones disponibles que cumplen con los criterios de búsqueda.
+El usuario selecciona una habitación disponible. El sistema solicita al usuario que proporcione la información necesaria para la reserva, como nombre, contacto, método de pago, etc.
+El usuario proporciona la información requerida. El sistema valida la información proporcionada por el usuario.
+El usuario confirma la reserva. El sistema registra la reserva y genera un número de reserva único y actualiza el estado de la habitación, en la fecha ingresada, como OCUPADA. El sistema genera una confirmación de reserva al usuario, que incluye los detalles de la reserva y el número de reserva. El sistema registra estado de reserva a CONFIRMADA. 
+
+CAMINOS ALTERNATIVOS:
+1a. Cliente ingresa opción registrarse. 
+1a.1. El sistema solicita los datos del cliente (nroDocumento, tip,oDocumeno, nombreHuesped, apellidoHuesped, telefonoHuesped, mailHuesped, contraseña)
+1.a.1. El usuario ingresa los datos solicitados.
+	1.a.2: El sistema valida los datos ingresados.
+	1a.2.1: Los datos ingresados están bien. Vuelve al paso 2. 
+	1.a.2.2.: Algunos o todos los datos ingresados están mal o no cumplen con las condiciones:
+	1.a.2.2.1: El sistema muestra los datos incorrectos. 
+1.a.2.2.2. El usuario corrige los datos erróneos. Vuelve al paso 1.a.2. 	
+2a. Los datos ingresados del usuario (email y contraseña) son erróneos o no existen.
+	2a.1. El sistema muestra que los datos no son correctos. Vuelve al paso 2. 
+4.a. No hay habitaciones disponibles para los criterios de búsqueda del usuario.
+4.a.1: el sistema muestra un mensaje de que no hay habitaciones disponibles con esas características. Fin CU.
+4b: La información proporcionada por el usuario es inválida o incompleta
+4b.1: el sistema muestra un mensaje de error. Vuelve al paso 4. 
+6.a: La información proporcionada no es válida o está incompleta.
+	6.a.1 El sistema muestra los datos que estén erróneos o incompletos.Vuelve al paso 5.
+	
+
+
+
+
+
+POSTCONDICIONES (de sistema): 
+Éxito: Se registra una reserva válida en el sistema. La habitación reservada se bloquea para las fechas de la estadía. Se genera una confirmación de reserva para el  usuario.
+Fracaso:No se realiza ninguna reserva en el sistema. La habitación reservada permanece disponible para reservas futuras.
+Éxito alternativo: El usuario no encontró lo que buscaba, modifico sus criterios, reservo una habitación. El sistema generó una reserva de esa habitación. 
+
+POSTCONDICIONES (de negocio):
+Éxito: El usuario ha realizado una reserva exitosa para su estadía en el hotel.
+Fracaso: El usuario no pudo completar la reserva de la habitación deseada.
+Éxito alternativo: 
