@@ -1,4 +1,4 @@
-# TPReservadeHotel
+# TP Reserva de Hotel
 
 ## Grupo
 ### Integrantes
