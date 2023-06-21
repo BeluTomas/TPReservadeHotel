@@ -1,0 +1,74 @@
+Código y Nombre del CASO DE USO: Realizar el Check-in de una Reserva
+
+Dimensiones de clasificación:
+Nivel
+Estructura
+Alcance
+Caja
+Instanciación
+Interacción
+Usuario
+Sin estructurar
+Sistema
+Negra
+Real
+Dialogal
+
+
+
+Meta del CASO DE USO:  Permitir al usuario realizar el check-in de una reserva al llegar al hotel. 
+
+Actor Primario:  Usuario					Otros: Recepcionista hotel
+
+PRECONDICIONES (de negocio):
+El usuario debe tener una reserva válida y confirmada en el hotel.
+El usuario debe estar presente físicamente en el hotel para realizar el check-in.
+El usuario debe tener la documentación de identidad necesaria para el check-in.
+
+
+PRECONDICIONES (de sistema): 
+La reserva del usuario debe estar registrada en el sistema y tener un estado de confirmación.
+
+DISPARADOR:  El usuario llega al hotel y desea realizar el check-in de su reserva.
+
+
+
+
+CAMINO BÁSICO:
+
+
+El usuario proporciona el número de reserva.El sistema valida el estado de la reserva y detalles.
+El usuario proporciona la documentación de identidad al recepcionista. El sistema valida la documentación y la información del usuario. 
+Si todo está correcto, el recepcionista marca la reserva como en curso. El sistema registra el check in. 
+
+
+CAMINOS ALTERNATIVOS:
+1a: Si el recepcionista no puede encontrar la reserva en el sistema, se le informa al usuario. Vuelve al paso 1.
+	1a.1: El sistema no encuentra la reserva. Fin CU.
+
+2a: Si la documentación de identidad del usuario no cumple con los requisitos o no concuerda con la información de la reserva, se le informa al usuario. Vuelve al paso 2. 
+	2a.1: El sistema no encuentra el dni. Fin CU.
+
+
+
+
+POSTCONDICIONES (de sistema): 
+Éxito: - El sistema registra el check-in de la reserva en el estado correspondiente.
+- Se asigna una habitación al usuario en el sistema.
+- Habitacion tiene estado ocupado
+
+Fracaso: - No se realiza ningún check-in en el sistema.
+- No se asigna ninguna habitación al usuario.
+- Habitacion tiene estado libre
+
+Éxito alternativo:- Si la documentación de identidad del usuario es insuficiente o se encuentra algún problema, se puede solicitar al usuario que proporcione información o documentos adicionales antes de completar el check-in.
+
+POSTCONDICIONES (de negocio):
+Éxito: - El usuario ha realizado el check-in exitoso de su reserva en el hotel.
+Las llaves de la habitación asignada se entregan al usuario.
+
+Fracaso: - El usuario no pudo completar el check-in de la reserva debido a problemas con la documentación
+	
+Éxito alternativo: -
+
+
