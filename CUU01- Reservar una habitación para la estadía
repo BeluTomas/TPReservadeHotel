@@ -1,15 +1,9 @@
 #Código y Nombre del CASO DE USO: CUU01- Reservar una habitación para la estadía
 
 ##Dimensiones de clasificación:
-|Nivel|Estructura|Alcance|Caja
-Instanciación
-Interacción
-Usuario
-Sin estructurar
-Sistema
-Negra
-Real
-Dialogal
+|Nivel|Estructura|Alcance|Caja|Instanciación|Interacción|
+|:-|:-|
+|Usuario|Sin estructurar|Sistema|Negra|Real|Dialogal|
 
 
 Meta del CASO DE USO:  Permitir al usuario realizar una reserva de habitación para una estadía en el hotel. 
