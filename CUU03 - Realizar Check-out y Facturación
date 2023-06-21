@@ -1,0 +1,62 @@
+Código y Nombre del CASO DE USO: Realizar Check-out y Facturación
+
+Dimensiones de clasificación:
+Nivel
+Estructura
+Alcance
+Caja
+Instanciación
+Interacción
+Alto nivel
+Secuencia
+Sistema
+Negra
+Sí
+Usuario-sistema
+
+
+Meta del CASO DE USO:  Permitir al usuario realizar el check-out de su estadía en el hotel y recibir la factura correspondiente.
+
+Actor Primario: Usuario					
+Otros: Sistema de Reservas, Recepcionista del Hotel, Sistema de Facturación
+
+PRECONDICIONES (de negocio):
+- El usuario debe tener una reserva confirmada y haber realizado el check-in en el hotel.
+- El usuario debe estar listo para partir del hotel y finalizar su estadía.
+
+PRECONDICIONES (de sistema): 
+- El sistema de reservas del hotel debe estar en funcionamiento.
+- La reserva del usuario debe estar registrada en el sistema y tener un estado de check-in completado.
+
+DISPARADOR:  El usuario desea realizar el check-out y recibir la factura de su estadía. 
+
+
+
+CAMINO BÁSICO:
+
+
+Empleado solicita número de reserva. Sistema valida la reserva.
+Empleado revisa los consumos de la reserva. Sistema genera la factura de la estadía. 
+Usuario paga la factura. Sistema registra el pago de la factura y se actualiza el estado de la reserva a COMPLETADA.
+
+
+CAMINOS ALTERNATIVOS:
+1a. No hay reserva que coincida con el número de reserva proporcionado.
+	1a.1: el sistema muestra un mensaje de que no hay reserva realizada. Fin CU.
+
+
+POSTCONDICIONES (de sistema): 
+Éxito:  - El sistema registra el check-out de la reserva en el estado correspondiente.
+- La factura de la estadía se genera y almacena en el sistema.
+- El pago del usuario se registra correctamente en el sistema.
+Fracaso: - No se realiza ningún check-out en el sistema.
+    - La factura no se genera o contiene errores.
+Éxito alternativo:
+
+POSTCONDICIONES (de negocio):
+Éxito: El usuario ha finalizado una reserva.
+Fracaso: El usuario no ha podido finalizar la reserva.
+Éxito alternativo: -
+
+
+
