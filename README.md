@@ -3,7 +3,7 @@
 ## Grupo
 ### Integrantes
 * 49330 - Dignani, Clara Josefina
-* 49702 - Periolo, Angela Sol
+* 49702 - Periolo, Ángela Sol
 * 48814 - Tomas, Maria Belen
 * 49256 - Muller, Dafne
 
