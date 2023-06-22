@@ -27,7 +27,7 @@ Un sistema de gestión hotelera que permite reservar habitaciones, realizar pago
 6. La reserva tiene un único estado en un momento determinado (cancelada, completada, en curso, confirmada).
 7. Si la fecha de check-out de la reserva es anterior a la fecha actual, la reserva ha finalizado y la habitación está disponible.
 8. Si la fecha de check-in de la reserva es posterior a la fecha actual, la reserva aún no ha comenzado y la habitación está disponible.
-9. Si 8 o 9 no se cumple, la reserva está en curso y la habitación no está disponible.
+9. Si 7 o 8 no se cumple, la reserva está en curso y la habitación no está disponible.
    
 ## Alcance Funcional 
 
