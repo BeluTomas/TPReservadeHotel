@@ -18,7 +18,7 @@ Un sistema de gestión hotelera que permite reservar habitaciones, realizar pago
 
 
 ### Modelo
-![imagen del modelo](https://github.com/BeluTomas/TPReservadeHotel/blob/d1e36d597dbe0b1f8f28db47a6e80f34ee33488d/ER.drawio.png)
+![imagen del modelo](https://github.com/BeluTomas/TPReservadeHotel/blob/0c96812e3d4866297dab3df2cbeca8ff66befcc2/ER.drawio.png)
 
 ## Alcance Funcional 
 
