@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <!-- PONER LOS OTROS LINKS  -->
+    <title> PARADISE HOTEL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Empeiza header  -->
+    <section class="header">
+        <div class="flex">
+            <a href="#home" class="logo"> PARADISE HOTEL </a>
+            <a href="login.html" class="button">Inicio de sesion</a>
+            <!-- ESTO ES INICIO DE SESION!!  -->
+            <div id="menu-button" class="fas fa-bars"></div>
+        </div>
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#about">Sobre nosotros</a>
+            <a href="#reservation">Reservar</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#contact">Contacto</a>
+            <a href="#reviews">Reseñas</a>
+
+        </nav>
+    </section>
+
+     <!-- termina header  -->
+    <!-- home section starts  -->
+    
+    <section class="home" id="home">
+    
+        <div class="swiper home-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="box swiper-slide">
+                    <img src="images/home-img-1.jpg" alt="">
+                    <div class="flex">
+                        <h3>Habitaciones lujosas</h3>
+                        
+                    </div>
+                </div>
+    
+                <div class="box swiper-slide">
+                    <img src="images/home-img-2.jpg" alt="">
+                    <div class="flex">
+                        <h3>Comida y tragos</h3>
+                        <a href="#reservation" class="button">Hacer reserva</a>
+                    </div>
+                </div>
+    
+                <div class="box swiper-slide">
+                    <img src="images/home-img-3.jpg" alt="">
+                    <div class="flex">
+                        <h3>Salones lujosos</h3>
+                        <a href="#contact" class="button">Contactate con nosotros</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    
+        </div>
+    
+    </section>
+     <!-- home end  -->
+    <!-- availability section starts  -->
+    
+    <section class="availability" id="availability">
+    
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>check in <span> </span></p>
+                    <input type="date" name="check_in" class="input" required>
+                </div>
+                <div class="box">
+                    <p>check out <span> </span></p>
+                    <input type="date" name="check_out" class="input" required>
+                </div>
+                <div class="box">
+                    <p>adultos <span> </span></p>
+                    <select name="adults" class="input" required>
+                        <option value="1">1 adulto</option>
+                        <option value="2">2 adultos</option>
+                        <option value="3">3 adultos</option>
+                        <option value="4">4 adultos</option>
+                        <option value="5">5 adultos</option>
+                        <option value="6">6 adultos</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>niños <span> </span></p>
+                    <select name="childs" class="input" required>
+                        <option value="-">0 niños</option>
+                        <option value="1">1 niño</option>
+                        <option value="2">2 niños</option>
+                        <option value="3">3 niños</option>
+                        <option value="4">4 niños</option>
+                        <option value="5">5 niños</option>
+                        <option value="6">6 niños</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>habitacion <span> </span></p>
+                    <select name="rooms" class="input" required>
+                        <option value="1">1 habitacion</option>
+                        <option value="2">2 habitaciones</option>
+                        <option value="3">3 habitaciones</option>
+                        <option value="4">4 habitaciones</option>
+                        <option value="5">5 habitaciones</option>
+                        <option value="6">6 habitaciones</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Consultar disponibilidad" name="check" class="button">
+        </form>   
+    </section>
+
+    <!-- availability section ends -->
+    
+    <!-- about section starts  -->
+    
+    <section class="about" id="about">
+    
+        <div class="row">
+            <div class="image">
+                <img src="images/about-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Sobre nosotros</h3>
+                <p>¡Viva una experiencia inolvidable! Reserve su habitación de hotel ahora y disfrute de comodidad, lujo y servicios
+                excepcionales. ¡No pierda esta oportunidad única de crear recuerdos invaluables!</p>
+                <a href="#reservation" class="button">Hacer reserva</a>
+            </div>
+        </div>
+    
+        <div class="row revers">
+            <div class="image">
+                <img src="images/about-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Las mejores comidas</h3>
+                <p>¡Descubre un festival de sabores! Deléitate con las mejores comidas cuidadosamente preparadas para satisfacer tu
+                paladar. Nuestro menú te ofrece una experiencia gastronómica única que no querrás perderte. Ven y prueba nuestras
+                exquisitas creaciones culinarias.</p>
+                <a href="#contact" class="button">Contactate</a>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="image">
+                <img src="images/about-img-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pileta climatizda</h3>
+                <p>¡Disfruta de un oasis de relajación en nuestra pileta climatizada! Sumérgete en aguas cálidas y reconfortantes en
+                cualquier época del año. Nuestra pileta climatizada te brinda un ambiente perfecto para descansar, divertirte y
+                desconectar del estrés diario. Ven y sumérgete en el lujo y confort que te ofrecemos.</p>
+                <a href="#availability" class="button">Consultar disponibilidad</a>
+            </div>
+        </div>
+
+    <!-- about section ends -->
+    
+    <!-- services section starts  -->
+    
+    <section class="services">
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="images/icon-1.png" alt="">
+                <h3>Comida y tragos </h3>
+                <p>Saborea platos exquisitos preparados con pasión y descubre cócteles artesanales que te sorprenderán.</p>
+            </div>
+    
+            <div class="box">
+                <img src="images/icon-2.png" alt="">
+                <h3>Restaurante al aire libre</h3>
+                <p>Delicias bajo el cielo abierto. Disfruta una experiencia culinaria sin igual rodeado de naturaleza y buenos momentos.</p>
+            </div>
+    
+            <div class="box">
+                <img src="images/icon-3.png" alt="">
+                <h3>Vista a la playa</h3>
+                <p>Despierta con el sonido de las olas y una vista panorámica a la playa.</p>
+            </div>
+    
+            <div class="box">
+                <img src="images/icon-4.png" alt="">
+                <h3>Decoracion</h3>
+                <p>Sumérgete en un mundo de elegancia y estilo. Nuestra decoración cuidadosamente diseñada te cautivará con detalles
+                encantadores y ambientes acogedores.</p>
+            </div>
+    
+            <div class="box">
+                <img src="images/icon-5.png" alt="">
+                <h3>Pileta</h3>
+                <p>Sumérgete en un oasis de frescura y diversión. Nuestra piscina te espera para refrescarte bajo el sol y disfrutar de
+                momentos inolvidables.</p>
+            </div>
+    
+            <div class="box">
+                <img src="images/icon-6.png" alt="">
+                <h3>Acceso a playa privada</h3>
+                <p>Disfruta de nuestro acceso directo a una playa privada de ensueño, donde las aguas
+                turquesas y la arena dorada te esperan para brindarte momentos inolvidables. </p>
+            </div>
+    
+        </div>
+     </section>
+    </section>
+    <!-- services section ends -->
+    
+    <!-- reservation section starts  -->
+    
+    <section class="reservation" id="reservation">
+    
+        <form action="" method="post">
+            <h3>Hacer reserva</h3>
+            <div class="flex">
+                <div class="box">
+                    <p>check in <span> </span></p>
+                    <input type="date" name="check_in" class="input" required>
+                </div>
+                <div class="box">
+                    <p>check out <span> </span></p>
+                    <input type="date" name="check_out" class="input" required>
+                </div>
+                <div class="box">
+                    <p>adultos <span> </span></p>
+                    <select name="adults" class="input" required>
+                        <option value="1">1 adulto</option>
+                        <option value="2">2 adultos</option>
+                        <option value="3">3 adultos</option>
+                        <option value="4">4 adultos</option>
+                        <option value="5">5 adultos</option>
+                        <option value="6">6 adultos</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>niños <span> </span></p>
+                    <select name="childs" class="input" required>
+                        <option value="-">0 niños</option>
+                        <option value="1">1 niño</option>
+                        <option value="2">2 niños</option>
+                        <option value="3">3 niños</option>
+                        <option value="4">4 niños</option>
+                        <option value="5">5 niños</option>
+                        <option value="6">6 niños</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>habitaciones <span> </span></p>
+                    <select name="rooms" class="input" required>
+                        <option value="1">1 habitacion</option>
+                        <option value="2">2 habitaciones</option>
+                        <option value="3">3 habitaciones</option>
+                        <option value="4">4 habitaciones</option>
+                        <option value="5">5 habitaciones</option>
+                        <option value="6">6 habitaciones</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Consultar disponibilidad" name="check" class="button">
+        </form>
+    
+    </section>
+    
+    <!-- reservation section ends -->
+    <!-- gallery section starts  -->
+    
+    <section class="gallery" id="gallery">
+    
+        <div class="swiper gallery-slider">
+            <div class="swiper-wrapper">
+                <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+                <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+                <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+                <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+                <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+                <img src="images/gallery-img-6.webp" class="swiper-slide" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
+    </section>
+    
+    <!-- gallery section ends -->
+    
+    <!-- contact section starts  -->
+    
+    <section class="contact" id="contact">
+    
+        <div class="row">
+    
+            <form action="" method="post">
+                <h3>Enviar mensaje</h3>
+                <input type="text" name="name" required maxlength="50" placeholder="Ingresa tu nombre" class="box">
+                <input type="email" name="email" required maxlength="50" placeholder="Ingresa tu email" class="box">
+                <input type="number" name="number" required maxlength="10" min="0" max="9999999999"
+                    placeholder="Ingresa tu numero de contacto" class="box">
+                <textarea name="msg" class="box" required maxlength="1000" placeholder="Ingresa tu mensaje" cols="30"
+                    rows="10"></textarea>
+                <input type="submit" value="Enviar mensaje" name="send" class="button">
+            </form>
+    
+            <div class="faq">
+                <h3 class="title">Preguntas frecuentes</h3>
+                <div class="box active">
+                    <h3>¿Como cancelar?</h3>
+                    <p> Si necesitas cancelar tu reserva, puedes hacerlo de manera rápida y sencilla llamando a
+                    nuestro equipo de atención al cliente. Nuestro amable personal estará encantado de ayudarte con el proceso de
+                    cancelación y responder cualquier consulta que puedas tener. Por favor, asegúrate de proporcionar la información
+                    necesaria de la reserva al momento de llamar. ¡Estamos disponibles para asistirte y garantizar una experiencia sin
+                    preocupaciones!</p>
+                </div>
+                
+                <div class="box">
+                    <h3>¿Cuales son los metodos de pago?</h3>
+                    <p>En nuestro hotel, ofrecemos la comodidad de pagar directamente en el momento del check-in o check-out. Aceptamos los
+                    siguientes métodos de pago:
+                    <br>
+                    <br>
+                    Efectivo: Puedes realizar el pago en efectivo en la recepción del hotel al momento de tu llegada o durante tu estancia.
+                    <br>
+                    <br>
+                    Tarjetas de débito y crédito: Aceptamos las principales tarjetas de débito y crédito (Visa, MasterCard, etc.) para
+                    facilitar tus transacciones en el hotel.
+                    <br>
+                    <br>
+                    Transferencia bancaria previa: Si lo prefieres, también puedes realizar una transferencia bancaria antes de tu llegada.
+                    Por favor, comunícate con nuestro equipo de reservas para obtener los detalles bancarios necesarios.
+                    <br>
+                    <br>
+                    Lamentablemente, no aceptamos pagos en línea a través de nuestro sitio web. Todos los pagos se realizan directamente en
+                    el hotel durante tu estadía.
+                     <br>
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>¿Cuál es el horario de check-in y check-out?</h3>
+                    <p>Check-in: Nuestro horario de check-in comienza a las 12:00 pm, lo cual significa que puedes
+                    registrarte y acceder a tu habitación a partir de esa hora. Si llegas antes del horario de check-in, estaremos
+                    encantados de guardar tu equipaje mientras esperas.
+                    <br>
+                    <br>
+                    Check-out: Te pedimos que desocupes tu habitación antes de las 10:00 am. Si necesitas
+                    quedarte un poco más, no dudes en consultarnos la posibilidad de un check-out tardío, estaremos encantados de ayudarte
+                    en lo que podamos.
+                    <br>
+                    <br>
+                    Por favor, ten en cuenta que los horarios de check-in y check-out son establecidos para garantizar que nuestras
+                    habitaciones sean limpiadas y preparadas adecuadamente para todos nuestros huéspedes. Si tienes alguna solicitud
+                    especial o necesitas organizar un horario diferente, no dudes en comunicarte con nuestro equipo de recepción para
+                    verificar la disponibilidad.<br></p>
+                </div>
+                <div class="box">
+                    <h3>¿Hasta que edad son niños?</h3>
+                    <p>En nuestro hotel, consideramos que los niños son aquellos huéspedes que tienen entre 0 y 12 años de edad. Los huéspedes
+                    mayores de 12 años se considerarán adultos y estarán sujetos a las tarifas correspondientes para adultos.
+                    <br>
+                    <br>
+                    Si tienes alguna consulta sobre la política de niños o necesitas aclarar la categoría de edad de tu hijo para fines de
+                    tarifas y alojamiento, no dudes en contactar a nuestro equipo de reservas. Estaremos encantados de ayudarte y brindarte
+                    toda la información necesaria para garantizar una estancia cómoda y placentera para toda tu familia.</p>
+                </div>
+                <div class="box">
+                    <h3>¿Tienen acceso a Internet Wi-Fi? ¿Es gratuito?</h3>
+                    <p>En nuestro hotel, ofrecemos acceso a Internet Wi-Fi de alta velocidad de forma gratuita para todos nuestros huéspedes.
+                    Podrás estar conectado en todas las áreas comunes, incluyendo el lobby, restaurantes y áreas de descanso. Además, todas
+                    nuestras habitaciones están equipadas con acceso a Wi-Fi para que puedas mantenerse conectado durante toda tu estadía.
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- contact section ends -->
+    
+    <!-- reviews section starts  -->
+    
+    <section class="reviews" id="reviews">
+    
+        <div class="swiper reviews-slider">
+    
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="images/pic-1.png" alt="">
+                    <h3>Joaquin Albornoz</h3>
+                    <p>Increíble experiencia, personal amable y servicial. La vista desde la habitación era impresionante, y la comida del
+                    restaurante era deliciosa. Definitivamente volveremos.</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/pic-2.png" alt="">
+                    <h3>Maria Leuco</h3>
+                    <p>Una estancia perfecta. La piscina y el área de la playa privada eran espectaculares. Habitaciones limpias y cómodas. ¡No
+                    queríamos irnos!</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/pic-3.png" alt="">
+                    <h3>Matias Ezequiel</h3>
+                    <p>El servicio al cliente fue excepcional. Siempre dispuestos a ayudar y hacer que nuestra estancia fuera inolvidable. ¡Una
+                    verdadera joya en la costa!</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/pic-4.png" alt="">
+                    <h3>Candelaria Esposito</h3>
+                    <p>El diseño del hotel es elegante y moderno. Nos encantaron las amenidades y la cercanía a la playa. ¡Una escapada de
+                    ensueño!</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/pic-5.png" alt="">
+                    <h3>Martin Prieto</h3>
+                    <p>Nos quedamos impresionados por la limpieza y el cuidado en todo el hotel. El personal hizo que nos sintiéramos como en
+                    casa. Sin duda, un lugar para volver.</p>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/pic-6.png" alt="">
+                    <h3>Eugenia Terre</h3>
+                    <p>¡El mejor hotel en el que nos hemos alojado! Ubicación perfecta, atención excepcional y detalles que marcan la
+                    diferencia. ¡No podemos esperar a volver!</p>
+                </div>
+            </div>
+    
+            <div class="swiper-pagination"></div>
+        </div>
+    
+    </section>
+    
+    <!-- reviews section ends  -->
+    
+    <!-- footer section starts  -->
+    
+    <section class="footer">
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <a href="tel:1234567890"><i class="fas fa-phone"></i> +54-456-789</a>
+                <a href="tel:1112223333"><i class="fas fa-phone"></i> +54-222-333</a>
+                <a href="mailto:shakhanas@gmail.com"><i class="fas fa-envelope"></i> paradisehotel@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Mar del Plata, Argentina - 7600</a>
+            </div>
+    
+            <div class="box">
+                <a href="#home">Inicio</a>
+                <a href="#about">Sobre nosotros</a>
+                <a href="#reservation">Reservas</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#contact">Contacto</a>
+                <a href="#reviews">Reseñas</a>
+            </div>
+    
+            <div class="box">
+                <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+                <a href="#">twitter <i class="fab fa-twitter"></i></a>
+                <a href="#">instagram <i class="fab fa-instagram"></i></a>
+            </div>
+    
+        </div>
+    
+        <div class="credit">&copy; copyright @ 2023 by dsw-com 301 </div>
+    
+    </section>
+    
+    <!-- footer section ends -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="script.js"></script> 
+    <!-- LINK A JAVA  -->
+    
+</body>
+</html>
