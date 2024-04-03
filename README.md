@@ -1,4 +1,4 @@
-# TP Reserva de Hotel
+# TP e-commerce
 
 ## Grupo
 ### Integrantes
@@ -13,7 +13,7 @@
 
 ## Tema
 ### Descripción
-Un sistema de gestión hotelera que permite reservar habitaciones, realizar pagos, hacer check-in y check-out. Los clientes podrán seleccionar fechas de llegada y salida, número de huéspedes y preferencias de habitaciones. El sistema calculará el costo total. Los empleados podrán hacer check-in, verificar identidad y asignar llaves. Al hacer check-out  se proporcionará una factura. El sistema debe ser intuitivo, seguro y generar informes de reservas, ingresos y disponibilidad de habitaciones. 
+Esta plataforma de comercio electrónico se especializa en la venta de prendas de ropa. Los usuarios pueden explorar y seleccionar productos de un catálogo publicado por el vendedor. Ofrecemos la opción de iniciar sesión para mantener un registro de datos personales y compras realizadas. Nuestro sistema facilita todas las etapas de la transacción, desde agregar productos al carrito hasta completar el pago. Además, mantenemos un registro actualizado del stock disponible y los pedidos realizados para una experiencia de compra sin complicaciones.
 
 ### Modelo
 ![imagen del modelo](https://github.com/BeluTomas/TPReservadeHotel/blob/0c96812e3d4866297dab3df2cbeca8ff66befcc2/ER.drawio.png)
